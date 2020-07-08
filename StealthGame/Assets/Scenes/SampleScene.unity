@@ -131,7 +131,7 @@ PrefabInstance:
     - target: {fileID: 3328696243330542437, guid: 78c175856936e584ca7712002b3187e9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3328696243330542437, guid: 78c175856936e584ca7712002b3187e9,
         type: 3}
@@ -141,7 +141,7 @@ PrefabInstance:
     - target: {fileID: 3328696243330542437, guid: 78c175856936e584ca7712002b3187e9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -21
+      value: -20
       objectReference: {fileID: 0}
     - target: {fileID: 3328696243330542437, guid: 78c175856936e584ca7712002b3187e9,
         type: 3}
@@ -187,6 +187,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PatrolPoint (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5976348913879482648, guid: 78c175856936e584ca7712002b3187e9,
+        type: 3}
+      propertyPath: m_TagString
+      value: Waypoint
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78c175856936e584ca7712002b3187e9, type: 3}
@@ -300,24 +305,32 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!1 &430727392 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5976348913879482648, guid: 78c175856936e584ca7712002b3187e9,
+    type: 3}
+  m_PrefabInstance: {fileID: 319272431}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &430727393 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3328696243330542437, guid: 78c175856936e584ca7712002b3187e9,
     type: 3}
   m_PrefabInstance: {fileID: 319272431}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &430727394 stripped
+--- !u!114 &430727395
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 921316479757217844, guid: 78c175856936e584ca7712002b3187e9,
-    type: 3}
-  m_PrefabInstance: {fileID: 319272431}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 430727392}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c4563d4ccbe8974dabd23a7e45a9bbb, type: 3}
+  m_Script: {fileID: 11500000, guid: 094df156ad195934ca8b1fdc2ef977af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debugDrawRadius: 1
+  _connectivityRadius: 30
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -420,7 +433,7 @@ PrefabInstance:
     - target: {fileID: 3328696243330542437, guid: 78c175856936e584ca7712002b3187e9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -23
+      value: -20
       objectReference: {fileID: 0}
     - target: {fileID: 3328696243330542437, guid: 78c175856936e584ca7712002b3187e9,
         type: 3}
@@ -476,6 +489,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PatrolPoint (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5976348913879482648, guid: 78c175856936e584ca7712002b3187e9,
+        type: 3}
+      propertyPath: m_TagString
+      value: Waypoint
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78c175856936e584ca7712002b3187e9, type: 3}
@@ -562,24 +580,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 40, y: 0, z: 0}
+--- !u!1 &1128371579 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5976348913879482648, guid: 78c175856936e584ca7712002b3187e9,
+    type: 3}
+  m_PrefabInstance: {fileID: 926780427}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1128371580 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3328696243330542437, guid: 78c175856936e584ca7712002b3187e9,
     type: 3}
   m_PrefabInstance: {fileID: 926780427}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1128371581 stripped
+--- !u!114 &1128371582
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 921316479757217844, guid: 78c175856936e584ca7712002b3187e9,
-    type: 3}
-  m_PrefabInstance: {fileID: 926780427}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1128371579}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c4563d4ccbe8974dabd23a7e45a9bbb, type: 3}
+  m_Script: {fileID: 11500000, guid: 094df156ad195934ca8b1fdc2ef977af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debugDrawRadius: 1
+  _connectivityRadius: 30
 --- !u!1 &1300411207
 GameObject:
   m_ObjectHideFlags: 0
@@ -708,24 +734,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1983170355 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5976348913879482648, guid: 78c175856936e584ca7712002b3187e9,
+    type: 3}
+  m_PrefabInstance: {fileID: 2024734723}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1983170356 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3328696243330542437, guid: 78c175856936e584ca7712002b3187e9,
     type: 3}
   m_PrefabInstance: {fileID: 2024734723}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1983170357 stripped
+--- !u!114 &1983170358
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 921316479757217844, guid: 78c175856936e584ca7712002b3187e9,
-    type: 3}
-  m_PrefabInstance: {fileID: 2024734723}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1983170355}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c4563d4ccbe8974dabd23a7e45a9bbb, type: 3}
+  m_Script: {fileID: 11500000, guid: 094df156ad195934ca8b1fdc2ef977af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debugDrawRadius: 1
+  _connectivityRadius: 30
 --- !u!1001 &2024734723
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -736,7 +770,7 @@ PrefabInstance:
     - target: {fileID: 3328696243330542437, guid: 78c175856936e584ca7712002b3187e9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3328696243330542437, guid: 78c175856936e584ca7712002b3187e9,
         type: 3}
@@ -793,26 +827,39 @@ PrefabInstance:
       propertyPath: m_Name
       value: PatrolPoint (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5976348913879482648, guid: 78c175856936e584ca7712002b3187e9,
+        type: 3}
+      propertyPath: m_TagString
+      value: Waypoint
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78c175856936e584ca7712002b3187e9, type: 3}
+--- !u!1 &2038649118 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5976348913879482648, guid: 78c175856936e584ca7712002b3187e9,
+    type: 3}
+  m_PrefabInstance: {fileID: 2039784099}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2038649119 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3328696243330542437, guid: 78c175856936e584ca7712002b3187e9,
     type: 3}
   m_PrefabInstance: {fileID: 2039784099}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2038649120 stripped
+--- !u!114 &2038649121
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 921316479757217844, guid: 78c175856936e584ca7712002b3187e9,
-    type: 3}
-  m_PrefabInstance: {fileID: 2039784099}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2038649118}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c4563d4ccbe8974dabd23a7e45a9bbb, type: 3}
+  m_Script: {fileID: 11500000, guid: 094df156ad195934ca8b1fdc2ef977af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debugDrawRadius: 1
+  _connectivityRadius: 30
 --- !u!1001 &2039784099
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -823,7 +870,7 @@ PrefabInstance:
     - target: {fileID: 3328696243330542437, guid: 78c175856936e584ca7712002b3187e9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -23
+      value: -20
       objectReference: {fileID: 0}
     - target: {fileID: 3328696243330542437, guid: 78c175856936e584ca7712002b3187e9,
         type: 3}
@@ -833,7 +880,7 @@ PrefabInstance:
     - target: {fileID: 3328696243330542437, guid: 78c175856936e584ca7712002b3187e9,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -21
+      value: -20
       objectReference: {fileID: 0}
     - target: {fileID: 3328696243330542437, guid: 78c175856936e584ca7712002b3187e9,
         type: 3}
@@ -880,6 +927,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PatrolPoint
       objectReference: {fileID: 0}
+    - target: {fileID: 5976348913879482648, guid: 78c175856936e584ca7712002b3187e9,
+        type: 3}
+      propertyPath: m_TagString
+      value: Waypoint
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78c175856936e584ca7712002b3187e9, type: 3}
 --- !u!1 &2081373650
@@ -895,8 +947,7 @@ GameObject:
   - component: {fileID: 2081373654}
   - component: {fileID: 2081373653}
   - component: {fileID: 2081373652}
-  - component: {fileID: 2081373651}
-  - component: {fileID: 2081373657}
+  - component: {fileID: 2081373658}
   m_Layer: 0
   m_Name: NPC
   m_TagString: Untagged
@@ -904,19 +955,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2081373651
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2081373650}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 794acdc42544fca44bc1add25766fba1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _desitination: {fileID: 0}
 --- !u!195 &2081373652
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1013,7 +1051,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2081373657
+--- !u!114 &2081373658
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1022,14 +1060,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 2081373650}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ae10588458af48478dd7407b3216f3e, type: 3}
+  m_Script: {fileID: 11500000, guid: 3d68e25f079b2aa4f90e0235043aefc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _patrolWaiting: 0
+  _partolWaiting: 0
   _totalWaitTime: 3
-  _SwitchProbability: 0
-  _patrolPoints:
-  - {fileID: 2038649120}
-  - {fileID: 1128371581}
-  - {fileID: 1983170357}
-  - {fileID: 430727394}
+  _switchProbability: 0
